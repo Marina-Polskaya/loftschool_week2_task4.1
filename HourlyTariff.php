@@ -1,7 +1,13 @@
 <?php
 
-class HourlyTariff
+class HourlyTariff extends TariffAbstract
 {
-    private $pricePerKm = 0;
-    private $pricePerHour = 200;
+    protected $pricePerKm = 0;
+    protected $pricePerHour = 200;
+    
+    /*public function countTripPrice($minutes)
+    {
+        //$price = ($minutes/60)*200;
+    }*/
+    
 }
