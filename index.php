@@ -13,5 +13,4 @@ error_reporting(E_ALL | E_NOTICE);
 
 $tariff = new BasicTariff(5, 60);
 $tariff->addService(new ServiceGPS(15));
-echo $tariff->countTripPrice();
-
+echo $tariff->countTripPrice() . '<br />';
