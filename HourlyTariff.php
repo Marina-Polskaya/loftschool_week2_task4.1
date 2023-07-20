@@ -1,13 +1,17 @@
 <?php
-/*
 class HourlyTariff extends TariffAbstract
 {
     protected $pricePerKm = 0;
-    protected $pricePerHour = 200;
+    protected $pricePerMin = 200/60;
     
-    /*public function countTripPrice($minutes)
+    public function __construct(int $distance, int $minutes) 
     {
-        //$price = ($minutes/60)*200;
+        parent::__construct($distance, $minutes);
+        $rest = $this->minutes % 60;
+        if ($this->minutes < 60) {
+            $this->minutes = 60;
+        } elseif ($rest > 0) {
+            $this->minutes = $this->minutes - $rest + 60;
+        }
     }
-    
-}*/
+}
