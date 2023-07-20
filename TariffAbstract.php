@@ -1,12 +1,11 @@
 <?php
 
-/*abstract class TariffAbstract implements TariffInterface
+abstract class TariffAbstract implements TariffInterface
 {
     protected $pricePerKm;
     protected $pricePerMin;
     protected $distance;
     protected $minutes;
-    /** @var ServiceInterface[] */ /*
     protected $services = [];
 
     
@@ -21,23 +20,25 @@
         
         if ($this->services) {
             foreach ($this->services as $service) {
-                $service->apply($this, &$price);
+                $service->apply($this, $price);
             }
         }
+        return $price;
     }
-    public function addService(ServiceInterface $service) : TariffInterface
+    
+    public function addService(ServiceInterface $service) : \TariffInterface
     {
         array_push($this->services, $service);
         return $this;
     }
     
-    public function getDistance($distance) : int
+    public function getDistance() : int
     {
-        return $this->distance = $distance;
+        return $this->distance;
     }
     
-    public function getMinutes($minutes) : int
+    public function getMinutes() : int
     {
-        return $this->minutes = $minutes;
+        return $this->minutes;
     }
-}*/
+}
