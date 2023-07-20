@@ -1,5 +1,5 @@
 <?php
-
+/*
 class ServiceGPS implements ServiceInterface
 {
     private $pricePerHour;
@@ -17,4 +17,4 @@ class ServiceGPS implements ServiceInterface
     
     
     
-}
+}*/

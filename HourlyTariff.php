@@ -1,5 +1,5 @@
 <?php
-
+/*
 class HourlyTariff extends TariffAbstract
 {
     protected $pricePerKm = 0;
@@ -8,6 +8,6 @@ class HourlyTariff extends TariffAbstract
     /*public function countTripPrice($minutes)
     {
         //$price = ($minutes/60)*200;
-    }*/
+    }
     
-}
+}*/

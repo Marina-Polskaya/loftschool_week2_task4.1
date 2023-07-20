@@ -1,12 +1,12 @@
 <?php
 
-abstract class TariffAbstract implements TariffInterface
+/*abstract class TariffAbstract implements TariffInterface
 {
     protected $pricePerKm;
     protected $pricePerMin;
     protected $distance;
     protected $minutes;
-    /** @var ServiceInterface[] */
+    /** @var ServiceInterface[] */ /*
     protected $services = [];
 
     
@@ -40,4 +40,4 @@ abstract class TariffAbstract implements TariffInterface
     {
         return $this->minutes = $minutes;
     }
-}
+}*/
