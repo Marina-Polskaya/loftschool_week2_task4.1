@@ -1,7 +1,5 @@
 <?php
 
-require_once 'TariffAbstract.php';
-
 class BasicTariff extends TariffAbstract
 {
     protected $pricePerKm = 10;

@@ -1,7 +1,5 @@
 <?php
 
-require_once 'TariffInterface.php';
-
 abstract class TariffAbstract implements TariffInterface
 {
     protected $pricePerKm;
