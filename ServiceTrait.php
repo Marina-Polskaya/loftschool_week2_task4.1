@@ -1,10 +1,7 @@
 <?php
 
-class ServiceGPS implements ServiceInterface
-{    
-    public $pricePerHour;
-    //use ServiceTrait;
-
+trait ServiceTrait
+{
     public function apply(TariffInterface $tariff, &$price)
     {
         $hours = ceil($tariff->getMinutes()/60);

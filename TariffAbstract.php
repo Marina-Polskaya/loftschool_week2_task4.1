@@ -8,7 +8,6 @@ abstract class TariffAbstract implements TariffInterface
     protected $minutes;
     protected $services = [];
 
-    
     public function __construct(int $distance, int $minutes) {
         $this->distance = $distance;
         $this->minutes = $minutes;
@@ -20,7 +19,7 @@ abstract class TariffAbstract implements TariffInterface
         
         if ($this->services) {
             foreach ($this->services as $service) {
-                $service->apply($this, $price);
+                $service->apply($this, &$price);
             }
         }
         return $price;
