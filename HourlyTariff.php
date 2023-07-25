@@ -1,6 +1,7 @@
 <?php
 class HourlyTariff extends TariffAbstract
 {
+    protected string $name = 'Почасовой';
     protected $pricePerKm = 0;
     protected $pricePerMin = 200/60;
     
