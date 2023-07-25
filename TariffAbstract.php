@@ -26,7 +26,7 @@ abstract class TariffAbstract implements TariffInterface
         return $price;
     }
     
-    public function PrintOrderInfo() : void
+    public function printOrderInfo() : void
     {
         echo 'Тариф ' . $this->getName() . ' (' . $this->distance . ' км, ' . $this->minutes . ' мин.).<br />';
         if ($this->servicesNames) {
